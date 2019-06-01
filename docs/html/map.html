@@ -1,0 +1,35 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="../css/map.css"/>
+    <title>Become A Minimalist- MAP</title>
+  </head>
+  <body>
+    <div class="header"><a class="title home" href="../../index.html">HOME</a><a class="title method" href="method.html">METHOD</a><a class="title information onPage" href="information.html">INFORMATION</a></div>
+    <div class="checkbtn"><a class="book btn onOption" href="map.html">Minimalists in the world</a><a class="map btn" href="information.html">Recommended 12 lifestyle books</a></div>
+    <div id="map">
+      <div class="mapInfo"><img id="map_img" src="../asset/img/地圖底圖.png"/>
+        <div id="point_img"><img class="point_img" v-for="(people, index) in peoples" @click="showPic(index)" :id="picID(index)" src="../asset/img/mapPoint/unClick_point.png"/></div>
+      </div>
+      <div class="info" v-for="(people, index) in peoples">
+        <div class="infoText" v-if="people.isShow"><img id="card_img" :src="people.img"/>
+          <div id="card_text">
+            <div class="topText detail"><img id="logo_img" src="../asset/img/logo.png"/><span class="name" v-html="people.name"> </span><span class="year" v-html="people.year"> </span></div>
+            <p class="detail">Location&nbsp; :<span v-html="people.location"> </span></p>
+            <p class="detail">Historical Positioning&nbsp; :<span v-html="people.history"> </span></p>
+            <p class="detail">Minimalist saying&nbsp; :<span v-html="people.saying"> </span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><a class="footerObj about">about us</a><a class="footerObj title method">Planning reason</a>
+      <div class="footerObj copyright">&copy; 2019 Become A Minimalist All Rights Reserved NEWSROOM Team     </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="../js/map.js"></script>
+  </body>
+</html>

@@ -1,0 +1,274 @@
+﻿[{
+        "quest": "What do you prepare before you finish your goal?",
+        "options": [{
+                "q": "&emsp;a.&emsp;I prefer to get detailed and diverse reference materials.&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;b.&emsp;I like to follow simple and straightforward suggestions.&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;c.&emsp;I usually do things the way I do, but I have a core idea.&emsp;",
+                "type": "C"
+            }
+        ],
+        "selected": null,
+        "id": 1
+    },
+    {
+        "quest": "How will you accomplish the goal process?",
+        "options": [{
+                "q": "&emsp;a.&emsp;I like to break through and finish step by step.;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;b.&emsp;I prefer to work hard to solve the problem completely.&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;c.&emsp;I usually don’t arrange the steps in particular, just do it first.&emsp;",
+                "type": "C"
+            }
+        ],
+        "selected": null,
+        "id": 2
+    },
+    {
+        "quest": "How do you usually make choices ?",
+        "options": [{
+                "q": "&emsp;a.&emsp;Focus on the practical level, consider utility.&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;b.&emsp;Focus on most people's experience and consult others suggest.&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;c.&emsp;More attention to intuition, believe in my current feelings.&emsp;",
+                "type": "B"
+            }
+        ],
+        "selected": null,
+        "id": 3
+    },
+    {
+        "quest": "Which information content is most appealing to you ?",
+        "options": [{
+                "q": "&emsp;a.&emsp;A clear outline, a comparison chart, and a narrative of the regulations.&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;b.&emsp;Clearly flow charts, causal maps, tables, and detailed instructions.&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;c.&emsp;Paved stories, positive words, examples of resonance.&emsp;",
+                "type": "B"
+            }
+        ],
+        "selected": null,
+        "id": 4
+    },
+    {
+        "quest": "Which narrative is the most convincing to you ?",
+        "options": [{
+                "q": "&emsp;a.&emsp;「They all recommend.」&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;b.&emsp;「I find it’s useful.」&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;「You should give it a try.」&emsp;",
+                "type": "B"
+            }
+        ],
+        "selected": null,
+        "id": 5
+    },
+    {
+        "quest": "How would you face the situations that others might not agree with ?",
+        "options": [{
+                "q": "&emsp;a.&emsp;I hope to convince others and invite them to participate in the action.&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;b.&emsp;As long as it is the right thing, I won’t care.&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;Avoid conflicts with others, but still do what I want to accomplish alone.&emsp;",
+                "type": "B"
+            }
+        ],
+        "selected": null,
+        "id": 6
+    },
+    {
+        "quest": "Which one do you think will help you reach your goal?",
+        "options": [{
+                "q": "&emsp;a.&emsp;Appropriate plan.&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;b.&emsp;Working with partners.&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;c.&emsp;Sense of accomplishment.&emsp;",
+                "type": "C"
+            }
+        ],
+        "selected": null,
+        "id": 7
+    },
+    {
+        "quest": "Which is most appropriate for your ideal living environment ?",
+        "options": [{
+                "q": "&emsp;a.&emsp;Surrounded by my favorite items.&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;b.&emsp;Focus me on the most important things.&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;Maintain a refreshing space.&emsp;",
+                "type": "A"
+            }
+        ],
+        "selected": null,
+        "id": 8
+    },
+    {
+        "quest": "If you can only choose one,which social platform would you choose to use ?",
+        "options": [{
+                "q": "&emsp;a.&emsp;Facebook&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;b.&emsp;Instagram&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;Youtube&emsp;",
+                "type": "B"
+            }
+        ],
+        "selected": null,
+        "id": 9
+    },
+    {
+        "quest": "Which natural property is most like you ?",
+        "options": [{
+                "q": "&emsp;a.&emsp;Fire, thunder, light.&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;b.&emsp;Ice, gold, wood.&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;Wind, water, soil.&emsp;",
+                "type": "A"
+            }
+        ],
+        "selected": null,
+        "id": 10
+    },
+    {
+        "quest": "Which adjective is most like your character ?",
+        "options": [{
+                "q": "&emsp;a.&emsp;Intuition, enthusiasm, kindness, honesty, confession, curiosity, sensitivity, warmth.&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;b.&emsp;Self-discipline, seriousness, rigor, order, focus, perfectionism, distance, reality, precision.&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;Harmony, balance, moderation, refreshment, high degree of cooperation, modesty, intellectuality, patience, goodwill.&emsp;",
+                "type": "A"
+            }
+        ],
+        "selected": null,
+        "id": 11
+    },
+    {
+        "quest": "Which mineral do you like the most?",
+        "options": [{
+                "q": "&emsp;a.&emsp;Pure Gem.&emsp;",
+                "type": "A",
+                "img": "../asset/img/gem/one_color.png"
+            },
+            {
+                "q": "&emsp;b.&emsp;Diamond.&emsp;",
+                "type": "B",
+                "img": "../asset/img/gem/muticolor.png"
+            },
+            {
+                "q": "&emsp;c.&emsp;Transparent crystal.&emsp;",
+                "type": "C",
+                "img": "../asset/img/gem/transparent.png"
+            }
+        ],
+        "selected": null,
+        "id": 12
+    },
+    {
+        "quest": "Which picture makes you feel the happiest.",
+        "options": [{
+                "q": "&emsp;a.&emsp;Some cups are neatly displayed in the cabinet.&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;b.&emsp;a separate plain glass.&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;kinds of beautiful cups are placed on the table.&emsp;",
+                "type": "B"
+            }
+        ],
+        "selected": null,
+        "id": 13
+    },
+    {
+        "quest": "下述哪段古詞的心境最令你嚮往 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;With a single bamboo dish of rice, a single gourd dish of drink, and living in his mean narrow lane, while others could not have endured the distress, Hui did not allow his joy to be affected by it.&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;b.&emsp;With coarse rice to eat, with water to drink, and my bended arm for a pillow; I have still joy in the midst of these things.&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;c.&emsp;I strive to be a tree of bodhi,And have a heart of a clear reflecting plane,Forever polishing it I will be,To never let it be dusted and vain.&emsp;",
+                "type": "A"
+            }
+        ],
+        "selected": null,
+        "id": 14
+    },
+    {
+        "quest": "Which one is more suitable for your expectations of the future ?",
+        "options": [{
+                "q": "&emsp;a.&emsp;I have a clear vision of the future and will be very specific.&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;b.&emsp;I only pay attention to the present.&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;I believe that as long as you live diligently, your days will naturally become better.&emsp;",
+                "type": "A"
+            }
+        ],
+        "selected": null,
+        "id": 15
+    }
+]

@@ -1,0 +1,56 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="../css/information.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+    <title>Become A Minimalist-INFORMATION</title>
+  </head>
+  <body>
+    <div class="header"><a class="title home" href="../../index.html">HOME</a><a class="title method" href="method.html">METHOD</a><a class="title information onPage" href="information.html">INFORMATION</a></div>
+    <div class="checkbtn"><a class="book btn" href="map.html">Minimalists in the world</a><a class="map btn onOption" href="information.html">Recommended 12 lifestyle books</a></div>
+    <div id="bookapp">
+      <div class="line lineOne">
+        <div class="title">Magical reduction magic</div>
+        <div class="bottom_line"></div>
+      </div>
+      <div class="line lineTwo"> 
+        <div class="title">Minimalist and MUJI</div>
+        <div class="bottom_line"></div>
+      </div>
+      <div class="line lineThree">
+        <div class="title">Simple life</div>
+        <div class="bottom_line"></div>
+      </div>
+      <div class="line lineFour">
+        <div class="title">Recommended for daily good things</div>
+        <div class="bottom_line"></div>
+      </div>
+      <div class="line lineFive">
+        <div class="title">The step of less is more</div>
+        <div class="bottom_line">         </div>
+      </div>
+      <div class="bookGroupBg" :id="bookID(index)" v-for="(book, index) in books"><img class="bookImg" :src="book.img" :class="{ isActive:book.isactive }"/>
+        <div class="num">{{ index+1 }}</div>
+        <div class="bookGroup" :class="{ bookActive:book.isactive }" @mouseover="mouseover(index)" @mouseleave="mouseleave(index)">
+          <div class="bookTitle">
+            <div class="name" v-bind:href="book.booklink" target="_blank" v-html="book.name"> </div>
+          </div>
+          <div class="info">
+            <div class="author">作者 | {{ book.author }}</div><br/>
+            <div class="intro" v-html="book.intro"> </div>
+          </div>
+          <div class="halfCircle"> </div>
+        </div>
+      </div>
+    </div><a class="js-btn"><i class="fas fa-chevron-up"></i></a>
+    <div class="footer"><a class="footerObj about">about us</a><a class="footerObj title method">Planning reason</a>
+      <div class="footerObj copyright">&copy; 2019 Become A Minimalist All Rights Reserved NEWSROOM Team     </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="../js/information.js"></script>
+  </body>
+</html>

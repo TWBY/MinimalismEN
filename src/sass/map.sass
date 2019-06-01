@@ -1,0 +1,187 @@
+@charset "UTF-8"
+@import  function
+@import  base
+
+*
+    position: static
+
+html, body
+    width: 100vw
+    height: 100vh
+
+// FOOTER
+.footer
+    position: absolute
+    bottom: 0px
+
+
+.checkbtn
+    position: absolute
+    display: flex
+    flex-direction: column
+    top: 20%
+    left: 15%
+    +size(15%,5%)
+    z-index: 50
+    .btn
+        text-align: center
+        font-size: 20px
+        padding: 3px 5px
+        border-radius: 20px
+        letter-spacing: 2px
+        margin-top: 2%
+        color: $Mgray_color
+        text-decoration: none
+        &:hover
+            background-color: #fefbd2
+            color: #231815
+            box-shadow: 1px 2px 0 0 rgba(198, 198, 186, 0.75)
+
+
+
+//MAP 頁面
+#map
+    position: relative
+    top: 10%
+    width: 70%
+    margin: 0 auto
+
+    
+#map_img
+    +size(100%,auto)
+
+
+.onOption
+    background-color: #fefbd2
+    color: #231815
+    box-shadow: 1px 2px 0 0 rgba(198, 198, 186, 0.75)
+
+
+//資訊卡
+.info
+    +size(70%, 15%)
+    //+border()
+    position: absolute
+    top: -50px
+    left: 350px
+    
+.infoText
+    +size(100%,auto)
+    display: flex
+
+#card_img
+    +size(100px, 100px)
+    // +border()
+    align-self:  flex-end 
+
+#logo_img
+    +size(20px, 20px)
+    
+
+#card_text
+    margin-left: 2%
+    // +border()
+    .detail 
+        margin: 0px
+        margin-bottom: 0.5%
+    .name, .year
+        margin-left: 2%
+
+
+//各個point 設定
+#map_img
+    +border()
+#point_img
+    +border()
+    +size(100%, 100%)
+    position: absolute
+    left: 0
+    top: 0
+    display: grid
+    grid-template-columns: repeat(360, 1fr)
+    grid-template-rows: repeat(150, 1fr)
+    // grid-template-rows: repeat(140, 1fr)
+.point_img
+    box-sizing: content-box
+    position: absolute
+    // display: inline-block
+    +border()
+    padding: 3px
+    +size(10px, 10px)
+#point0
+    // grid-column: 33 / span 1
+    // grid-row: 40 / span 1
+    grid-column: 33 / span 1
+    grid-row: 48 / span 1 
+//約翰波森
+
+#point1
+    grid-column: 246 / span 1
+    grid-row: 64 / span 1
+//賈伯斯 
+
+#point2
+    grid-column: 160 / span 1
+    grid-row: 68 / span 1
+//佐佐木    
+
+#point3
+    grid-column: 44 / span 1
+    grid-row: 47 / span 1
+//雅各布
+
+#point4
+    grid-column: 288 / span 1
+    grid-row: 62 / span 1
+//FB
+
+#point5
+    grid-column: 56 / span 1
+    grid-row: 60 / span 1
+//修女
+
+#point6
+    grid-column: 96 / span 1
+    grid-row: 80 / span 1
+//甘地
+    
+#point7
+    grid-column: 247 / span 1
+    grid-row: 60 / span 1
+    
+/*法蘭辛
+
+#point8
+    grid-column: 164 / span 1
+    grid-row: 68 / span 1
+
+/*沼畑
+
+#point9
+    grid-column: 246 / span 1
+    grid-row: 57 / span 1
+    
+/*雷蒙德卡佛
+
+#point10
+    grid-column: 273 / span 1
+    grid-row: 66 / span 1
+    
+/*柯林萊特
+
+#point11
+    grid-column: 270 / span 1
+    grid-row: 57 / span 1
+    
+
+/*喬舒亞·貝克爾
+
+#point12
+    grid-column: 135 / span 1
+    grid-row: 62 / span 1
+/*雍正
+
+#point13
+    grid-column: 280 / span 1
+    grid-row: 59 / span 1
+//喬舒亞·菲爾茲·米爾伯

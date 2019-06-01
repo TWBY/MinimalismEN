@@ -1,0 +1,181 @@
+
+
+
+.checkbtn
+    position: absolute
+    display: flex
+    flex-direction: column
+    top: 20%
+    left: 15%
+    +size(15%, auto)
+    // +border(dotted, 1px ,black)
+    z-index: 20
+.btn
+    text-align: center
+    font-size: 20px
+    padding: 3px 5px
+    border-radius: 20px
+    letter-spacing: 2px
+    margin-top: 2%
+    color: $Mgray_color
+    text-decoration: none
+    &:hover
+        background-color: #fefbd2
+        color: #231815
+        box-shadow: 1px 2px 0 0 rgba(198, 198, 186, 0.75)
+
+.onOption
+    background-color: #fefbd2
+    color: #231815
+    box-shadow: 1px 2px 0 0 rgba(198, 198, 186, 0.75)
+
+
+
+//標題與書本的比例 100/5 = 20 = $title + $book
+$title: 3%
+$book: 17%
+#bookapp
+    +size(67%, 165vh)
+    margin: 0 auto
+    // background-color: #555
+    display: grid
+    grid-template-columns: 10% 30% 30% 30%
+    grid-template-rows: $title $book $title $book $title $book $title $book $title $book 
+
+    margin-top: 5%
+    margin-bottom: 5%
+
+
+//分類標題
+.line
+    color: $Mgray_color
+    & .title
+        font-size: 20px
+        margin-bottom: 0.5%
+    & .bottom_line
+        +size(100%,1px)
+        +border(solid, 1px ,lighten($Mgray_color,20%))
+    
+//書籍
+.bookGroupBg
+    +size(100%, 100%)
+    // margin-top: 5%
+    //background-color: #333
+
+
+//書籍
+.num
+    position: absolute
+    // left: -10%
+    font-size: 20px
+    color: #595757
+.bookGroup
+    background-color: #f1f2f4
+    +size(50%, 70%)
+    z-index: 10
+    padding:  5% 0%
+    font-family: $CH_language
+    letter-spacing: 2px
+    opacity: 0
+    transition-duration: .5s
+    left: 6%
+    
+.info
+    line-height: 200%
+    .intro, .author
+        text-align: center
+
+.bookActive
+    opacity: 1
+    transition-duration: .5s
+
+
+
+.halfCircle  
+    content: ""
+    position: absolute
+    +size(100%, 40%)
+    left: 0%
+    top: 100%
+    z-index: -1
+    background-color: #f1f2f4
+    border-radius: 0 0 100px 100px 
+
+
+.bookImg
+    position: absolute
+    z-index: 100
+    transition-duration: 1.2s
+    pointer-events: none
+    //+border()
+    opacity: 1
+    left: 10%
+.isActive
+    transform: translateX(120%)
+    transition-duration: 1.2s
+    // opacity: 1
+
+
+//one
+#book0
+    grid-column: 3 / 4
+    grid-row:  2 / 3
+#book1
+    grid-column: 4 / 5
+    grid-row:  2 / 3
+//two
+#book2
+    grid-column: 2 / 3
+    grid-row:  4 / 5
+#book3
+    grid-column: 3 / 4
+    grid-row:  4 / 5
+#book4
+    grid-column: 4 / 5
+    grid-row:  4 / 5
+//three
+#book5
+    grid-column: 3 / 4
+    grid-row:  6 / 7
+#book6
+    grid-column: 4 / 5
+    grid-row:  6 / 7
+//four
+#book7
+    grid-column: 3 / 4
+    grid-row:  8 / 9
+#book8
+    grid-column: 4 / 5
+    grid-row:  8 / 9
+//five
+#book9
+    grid-column: 2 / 3
+    grid-row:  10 / 11
+#book10
+    grid-column: 3 / 4
+    grid-row:  10 / 11
+#book11
+    grid-column: 4 / 5
+    grid-row:  10 / 11
+
+.line
+    align-self: end
+.lineOne
+    grid-column: 3 / 5
+    grid-row: 1 / 2
+.lineTwo
+    grid-column: 1 / 5
+    grid-row: 3 / 4   
+.lineThree
+    grid-column: 3 / 5
+    grid-row: 5 / 6  
+.lineFour
+    grid-column: 3 / 5
+    grid-row: 7 / 8  
+.lineFive
+    grid-column: 1 / 5
+    grid-row: 9 / 10  
+
+
+
+

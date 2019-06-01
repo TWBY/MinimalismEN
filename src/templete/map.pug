@@ -1,0 +1,45 @@
+﻿html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="../css/map.css")
+        title Become A Minimalist- MAP
+    body
+        .header
+            a.title.home(href="../../index.html") HOME
+            a.title.method(href="method.html") METHOD
+            a.title.information.onPage(href="information.html") INFORMATION
+        .checkbtn
+            a.book.btn.onOption(href="map.html") Minimalists in the world
+            a.map.btn(href="information.html") Recommended 12 lifestyle books
+        #map
+            .mapInfo
+                img#map_img(src='../asset/img/地圖底圖.png')
+                #point_img
+                    img.point_img(v-for='(people, index) in peoples' @click='showPic(index)', :id='picID(index)', src='../asset/img/mapPoint/unClick_point.png')
+            .info(v-for='(people, index) in peoples')
+                .infoText(v-if='people.isShow')
+                    img#card_img(:src='people.img')
+                    #card_text
+                        .topText.detail
+                            img#logo_img(src='../asset/img/logo.png')
+                            span.name(v-html="people.name") 
+                            span.year(v-html="people.year") 
+                        p.detail Location&nbsp; :
+                            span(v-html="people.location") 
+                        p.detail Historical Positioning&nbsp; :
+                            span(v-html="people.history") 
+                        p.detail Minimalist saying&nbsp; :
+                            span(v-html="people.saying") 
+
+        .footer
+            a.footerObj.about about us
+            a.footerObj.title.method Planning reason
+            .footerObj.copyright &copy; 2019 Become A Minimalist All Rights Reserved NEWSROOM Team     
+
+
+        script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js")
+        script(src="../js/map.js")
+        

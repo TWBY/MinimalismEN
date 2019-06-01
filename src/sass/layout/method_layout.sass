@@ -1,0 +1,241 @@
+body
+    overflow: hidden
+#app
+    font-size: 1em
+    +size(100%, auto)
+
+//問卷開頭
+.intro
+    +size(100%, 80%)
+    +flexdisplay()
+.container
+    // +border()
+    +size(72%, 75%)
+    display: grid
+    grid-template-rows: 40% 60%
+    // transform: translateY(-10%)
+    transform: translate(2%,-7%)
+    .top
+        grid-row: 1 / 2
+        display: grid
+        grid-template-rows: 44% 38% 38%
+        align-items: center
+        justify-items: center
+        .subtitle
+            top: -15%
+    .bottom    
+        grid-row: 2 / 3
+        display: grid
+        grid-template-columns: 70% 30%
+        .operation
+            grid-column: 1 / 2
+            display: grid
+            grid-template-columns: 34% 22% 22% 22% 
+            grid-template-rows: 70% 30%
+            //background-color: #f24
+            justify-items: center
+            // align-items: center
+            .symbol
+                line-height: 200px
+                align-self: end
+            .unit
+                align-self: start
+                top: 38%
+                left: -4%
+            .min
+                grid-row: 2 / 3
+                grid-column: 3 / 4
+        .state
+            grid-column: 2 / 3
+            display: grid
+            grid-template-rows: 70% 30%
+            justify-items: center
+            align-items: center
+            .depiction
+                align-self: end
+                left: -4%
+            .button
+                +size(70% ,auto)
+                text-align: center
+                padding: 1.5% 0px
+                left: -11%
+                letter-spacing: 6px
+
+
+
+//題目頁面
+
+//進度條
+$bar_height: 592px
+$inner_height: $bar_height / 16 //20px
+.bar
+    position: absolute
+    left: 25%
+    +size($inner_height*0.8, $bar_height)
+    box-sizing: content-box
+    .logo
+        position: absolute
+        left: -20px
+        transform: translateY(-50%)
+        z-index: 10
+.inner
+    +size($inner_height*0.8, $inner_height)
+    // border: dotted 1px #f24
+    box-sizing: content-box
+    transform: translateY($bar_height - $inner_height)
+    transition-duration: 0.5s
+
+.num
+    position: absolute
+    left: 50px
+
+//問題
+.groupQuestion
+    +size(40%, auto)
+    left: 32%
+    & .title 
+        margin-bottom: 20px
+    & .option
+        margin-bottom: -10px
+
+@for $i from 1 through 5
+    #ques#{$i*3-3} 
+        margin-top: 3.5%
+
+@for $i from 1 through 5
+    #ques#{$i*3-2} 
+        margin-top: 2.3%
+    
+@for $i from 1 through 5
+    #ques#{$i*3-1} 
+        margin-top: 2.3%
+
+
+//下一頁與結果按鈕
+.nextBtn
+    position: absolute
+    +size(35px,35px)
+    left: 32%
+    top: 107%
+    // +border()
+    background-image: url('../asset/img/button/黃色按鈕.png')
+    background-size: cover
+    &:hover
+        background-image: url('../asset/img/button/灰按鈕.png')
+        background-size: cover
+
+.resultBtn
+    position: absolute
+    font-size: 20px
+    background-color: $yellow_color
+    color: $black_color
+    left: 39%
+    top: 105%
+    padding: 0.3% 4%
+    border-radius: 20px
+    box-shadow: 0px 5px 2px $cccccc
+    letter-spacing: 2px
+    &:hover
+        background-color: $gray_color
+        color: $black_color
+
+
+
+//結果頁面
+#results
+    +flexdisplay()
+    margin: 0 auto
+    margin-top: 100px
+    +size(70%, 600px) 
+
+
+#result0, #result1, #result2 
+    padding: 10px
+    cursor: pointer
+    +size(100% / 3 , 100%)
+    height: 100% !important
+    flex: 1 1
+    transition-duration: 1.5s
+    &:hover
+        flex: 15
+        transition-duration: 2.5s
+        transition-timing-function: ease
+    & .title
+        position: absolute
+        +size(40px, 100% - 5%)
+        padding-top: 20px
+
+    //人物
+    & .People
+        position: absolute
+        right: 0px
+        bottom: 0px
+        +size(400px, auto)
+        transition-delay: .8s
+
+
+
+    //簡介
+    & .depiction
+        // position: relative
+        position: absolute
+        +size(750px, auto)
+        top: 220px
+        left: 80px
+        opacity: 0
+        transition-delay: -0.3s
+        // transition-timing-function: ease-in
+        // display: none
+    &:hover .depiction
+        top: 150px
+        opacity: 1
+        transition-duration: 1s
+        transition-delay: 0.6s
+        display: inline-block
+        // transition-timing-function: ease-out
+
+    //星星
+    & .stars
+        position: absolute
+        left: 50px
+        display: flex
+        flex-wrap: wrap
+        +size(230px, auto)
+        transition-delay: 1.0s
+        //+border()
+        & .star
+            +size(15%, auto)
+            margin-left: 5%
+            margin-top: 5%
+            & img
+                +size(100%, auto)
+                transition-delay: 0.8s
+    & .open
+        opacity: 0
+        // transition-delay: 1.8s
+        transition-delay: -0.3s
+
+
+//header
+.footer
+    position: absolute
+    bottom: 0px
+
+//media require
+// @media screen and (max-width: 1700px)
+//     .container 
+//         +size(70%, auto)
+//     #results
+//         +size(85%, 600px)
+
+// @media screen and (max-width: 1366px)
+//     .container 
+//         +size(90%, auto)
+//     #results
+//         +size(95%, 600px)
+
+// @media screen and (max-width: 1024px)
+//     .container 
+//         +size(95%, auto)
+//     #results
+//         +size(95%, 600px)

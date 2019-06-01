@@ -1,0 +1,151 @@
+
+//影片撥放   
+.videoArea  
+    overflow: hidden
+    z-index: 30
+.StreetImg
+    position: absolute
+    align-self: center
+    // +size(auto, 100%)
+    +size(100%, auto)
+    top: 50%
+    transform: translateY(-50%)
+    transition-duration: .5s
+    transform-origin: 50% 50%
+    &:hover
+        // top: 50%
+        // transform: translateY(-50%)
+        transform-origin: 50% 50%
+        //transform: scale(1.05)
+        transition-duration: .5s
+        vertical-align: middle
+.video-toggle
+    overflow: hidden
+    transform: translate(calc(50% - 5rem), calc(50% - 5rem))
+    // transform: translate(50%, 50%)
+    z-index: 9
+    visibility: hidden
+    cursor: pointer
+    position: absolute
+    background: #f24
+    width: 100%
+    height: 100%
+    // overflow: hidden
+    transition: transform 0.6s cubic-bezier(0.6, 0, 0.4, 1)
+    .video-toggle-inner
+        position: absolute
+        +size(100%, 100%)
+        overflow: hidden
+        transition: transform 0.6s cubic-bezier(0.6, 0, 0.4, 1)
+        transform: translate(calc(-100% + 10rem), calc(-100% + 10rem))
+        // transform: translate(-100%, calc(-100%)
+    .video-toggle-inner-people, .video-toggle-inner-street
+        &:before
+            pointer-events: auto
+            content: "▶"
+            +size(10rem, 10rem)
+            +flexdisplay()
+            // border: solid 1px white
+            // border-radius: 50%
+            bottom: 0
+            right: 0
+            position: absolute
+            z-index: 1
+            font-size: 5rem
+            background-color: white
+            color: $gray_color
+            // text-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1)
+            transition: opacity 0.3s linear 0.3s
+            visibility: visible
+            background-size: cover
+    .video-toggle-inner-people
+        &:before
+            background-image: url('../asset/img/撥放鍵2.png')
+    .video-toggle-inner-street
+        &:before
+            background-image: url('../asset/img/撥放鍵.png')
+    video
+        transform: translate(calc(-50% + 15rem), calc(-50% + 10rem))
+        position: absolute
+        top: 50%
+        left: 50%
+        +size(100%,auto)
+        transition: inherit
+        visibility: visible
+    &.active
+        pointer-events: auto
+        transform: none
+        // transition-duration: .8s
+        .video-toggle-inner
+            transform: none
+            opacity: 1
+            // transition-duration: .8s
+            &:before
+                opacity: 0
+                transition-delay: 0s
+        video
+            transform: translate(-50%, -50%)
+
+video, img
+    max-width: 100%
+    height: auto
+
+.videoButton
+    // +border()
+    +size(90%,5%)
+//影片時間軸
+input[type=range]
+    +size(100%,100%)
+    //取消默认样式
+    -webkit-appearance: none
+    background: none
+    outline: none
+    opacity: 0
+    transition-duration: .3s
+    transition-delay: .5s
+    z-index: 50
+    &:hover
+        opacity: 1
+        transition-duration: .5s
+    &::-webkit-slider-runnable-track
+        background: lighten($yellow_color,3%)
+        height: 20px
+        border-radius: 20px
+    &::-webkit-slider-thumb
+        -webkit-appearance: none
+        border: 1px solid $Mgray_color
+        +size(2.1%,100%)
+        border-radius: 50%
+        background: $yellow_color
+        // background: lighten($Mgray_color,30%)
+        cursor: pointer
+        &:active
+            transform: scale(1.2)
+
+
+// //top向上按鈕
+// .js-btn
+//     +size(50px,50px)
+//     background: lighten($Mgray_color,10%)
+//     position: fixed
+//     bottom: 10%
+//     left: 5%
+//     border-radius: 35px
+//     opacity: 0
+//     text-decoration: none
+//     +flexdisplay()
+//     transition: all 0.5s ease
+//     i
+//         color: #fff
+//         position: relative
+//         top: -2px
+//         font-size: 19px
+//         transition: all 0.3s ease
+//     &:hover
+//         background: rgba(0, 0, 0, 0.9)
+//         i
+//             color: #fff
+//             top: -5px
+// .fade
+//     opacity: 1
+//     transition: all 0.5s ease

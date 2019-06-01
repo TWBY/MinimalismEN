@@ -1,0 +1,121 @@
+﻿[{
+        "name": "Tidying Up with Marie Kondo",
+        "subtitle": "這是副標這是",
+        "author": "Kondo Ma Lihui",
+        "img": "../asset/img/books/怦1.png",
+        "booklink": "https://www.books.com.tw/products/0010521950",
+        "intro": "Professional organizing consultant -- Kondo Ma Lihui<br>Deliver an effective organizing method with passion and experience.",
+        "isactive": false,
+        "index": 1
+    },
+    {
+        "name": "Tidying Up with Marie Kondo 2",
+        "subtitle": "這是副標這是",
+        "author": "Kondo Ma Lihui",
+        "img": "../asset/img/books/怦2.png",
+        "booklink": "https://www.books.com.tw/products/0010582986?loc=P_asb_001",
+        "intro": "To the person who harvesting the discard trick,<br>Discover the magic of the ideal space.",
+        "isactive": false,
+        "index": 2
+    },
+    {
+        "name": "I decided simple life",
+        "subtitle": "這是副標這是",
+        "author": "Sasaki",
+        "img": "../asset/img/books/無印極簡.png",
+        "booklink": "https://www.books.com.tw/products/0010702227",
+        "intro": "Full record author from messy to minimalist<br>The essence of Espresso philosophy.",
+        "isactive": false,
+        "index": 3
+    },
+    {
+        "name": "MUJI & My simple life",
+        "subtitle": "這是副標這是",
+        "author": "Yamaguchi",
+        "img": "../asset/img/books/無印生活.png",
+        "booklink": "https://www.books.com.tw/products/0010741070",
+        "intro": "Few items to live a simple life!<br>Muji makes simple and beautiful,<br>Practice your imagination in the texture space.",
+        "isactive": false,
+        "index": 4
+    },
+    {
+        "name": "Minimalist proposal of MUJI",
+        "subtitle": "這是副標這是",
+        "author": "Michelle",
+        "img": "../asset/img/books/決定.png",
+        "booklink": "https://www.books.com.tw/products/0010747387",
+        "intro": "Find the \"Easy minimalist mode\" <br>according to ordinary life examples of educating children minimalist.",
+        "isactive": false,
+        "index": 5
+    },
+    {
+        "name": "Ideal simple life",
+        "subtitle": "這是副標這是",
+        "author": "Dominique Lolo",
+        "img": "../asset/img/books/簡生.png",
+        "booklink": "https://www.books.com.tw/products/0010631423",
+        "intro": "A masterpiece of simple life in Europe,<br>Include Zen and French elegance.<br>A romantic proposal for living with less.",
+        "isactive": false,
+        "index": 6
+    },
+    {
+        "name": "The list of simple life",
+        "subtitle": "這是副標這是",
+        "author": "Dominique Lolo",
+        "img": "../asset/img/books/清單.png",
+        "booklink": "https://www.books.com.tw/products/0010589538",
+        "intro": "Handwritten list to clarify demand,<br>So you can planning for a better life in the future.",
+        "isactive": false,
+        "index": 7
+    },
+    {
+        "name": "Fetishes want to be light",
+        "subtitle": "這是副標這是",
+        "author": "Ben Duo Sha Zhi",
+        "img": "../asset/img/books/戀物.png",
+        "booklink": "https://www.books.com.tw/products/0010729204?loc=P_003_007",
+        "intro": "Not to discard but to save the thing you really love.<br>You can feel minimal happiness when everything is your favorite.",
+        "isactive": false,
+        "index": 8
+    },
+    {
+        "name": "The beauty life from now on",
+        "subtitle": "這是副標這是",
+        "author": "X-knowledge",
+        "img": "../asset/img/books/美好生活.png",
+        "booklink": "https://www.books.com.tw/products/0010729204?loc=P_003_007",
+        "intro": "Five different mature women share the ingenuity details of life.<br>Including diet, apparel, decorate, vegetation and cosmetology.",
+        "isactive": false,
+        "index": 9
+    },
+    {
+        "name": "Less is more",
+        "subtitle": "這是副標這是",
+        "author": "Yamashita Hideko",
+        "img": "../asset/img/books/斷捨.png",
+        "booklink": "https://www.books.com.tw/products/0010516523",
+        "intro": "New life stress is living a new life still.<br>Author propose three step to change the life.<br>That influence millions of people.",
+        "isactive": false,
+        "index": 10
+    },
+    {
+        "name": "Less is more trend",
+        "subtitle": "山下英子",
+        "author": "Yamashita Hideko",
+        "img": "../asset/img/books/斷流.png",
+        "booklink": "https://www.books.com.tw/products/0010662846",
+        "intro": "The manual for the reduction reorganize the order of life,<br>Guide to the retention of 30 types of items.<br>",
+        "isactive": false,
+        "index": 11
+    },
+    {
+        "name": "Simple life of Less is more",
+        "subtitle": "這是副標這是",
+        "author": "Yamashita Hideko",
+        "img": "../asset/img/books/斷簡.png",
+        "booklink": "https://www.books.com.tw/products/0010729204?loc=P_003_007",
+        "intro": "Show the comfortable life after implement Less is more<br>And share the details of decorate",
+        "isactive": false,
+        "index": 12
+    }
+]

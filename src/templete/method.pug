@@ -1,0 +1,84 @@
+﻿html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="../css/method.css")
+        title  Become A Minimalist- METHOD
+    body
+        .header
+            a.title.home(href="../../index.html") HOME
+            a.title.method.onPage(href="method.html") METHOD
+            a.title.information(href="information.html") INFORMATION
+        #app
+            template#intro(v-if='pageNow == 0')
+                .intro
+                    .container 
+                        .top
+                            .logoContain
+                                img.logo(src="../asset/img/logo.png", alt="aaa")
+                            .title 「Which reduction method is asuitable for you?」
+                            .subtitle Let the test tells you.Which one are you suitable for the three laws?
+
+                        .bottom
+                            .operation
+                                .symbol 15
+                                .symbol +
+                                .symbol 5
+                                .symbol =
+                                .unit.option Questions
+                                .unit.min Minutes
+                                
+                            .state
+                                .depiction 
+                                    | The result of psychological test .
+                                    br 
+                                    | Just for amusement only, not Academic quantitative report.
+                                    br
+                                    
+                                .button.start(@click='start') START
+                        
+            template.questions(v-if='pageNow == 1')
+                .bar
+                    img.logo(src="../asset/img/logo.png", alt="", srcset="")
+                    .inner
+                        .radio
+                        .num {{ number }} 
+                template(v-for='(item, index) in questions')
+                    //- 條件式的渲染整道題目
+                    template(v-if='showItem(index)')
+                        .groupQuestion(:id="quesId(index)" )      
+                            .title {{ index + 1 }}.{{ item.quest }}
+                            //- 每一個選項的渲染
+                            template.number(:class="labelId(v)" v-for='(val, v) in item.options')
+                                input(:id="fromId(index,v)" type='radio', v-bind:value='val.type', v-model='item.selected' v-on:change='change()')
+                                .labelOuter
+                                    label.option(:for="fromId(index,v)"  v-html="val.q") 
+                                    br
+                                    img.gem(v-bind:src="val.img")  
+
+                                //- br
+                //- .Btn.preBtn(@click='last', v-if='this.now > 0') 上一頁
+                //- .Btn.nextBtn(@click='next', v-if='this.now < this.questions.length - 3') 下一頁
+                //- .Btn.nextBtn(@click='next' src="../asset/img/button/白按鈕.png", v-if='this.now < this.questions.length - 3')
+                .Btn.nextBtn(@click='next' , v-if='this.now < this.questions.length - 3')
+                .Btn.resultBtn(@click='settlement', v-if='this.now == this.questions.length - 3') 看結果
+                //- .Btn.resultBtn(@click='settlement', v-if='true') 看結果
+
+            template#result(v-if='pageNow == 2')
+                #results
+                    .resultContainer(:id="resultId(index)" v-for='(result, index) in resultInfos' @mouseover="mouseover(index)" @mouseleave="mouseleave(index)")
+                        .title {{ result.title }} 
+                        img.People(v-bind:src="result.img", alt="")
+                        .stars
+                            .star(v-for='item in showStar(index)') 
+                                img(src="../asset/img/logo.png", alt="")
+                        .depiction
+                            .state(v-html='result.state')
+        .footer
+            a.footerObj.about About us
+            a.footerObj.title.method 企劃來由
+            .footerObj.copyright &copy; 2019 Become A Minimalist All Rights Reserved NEWSROOM Team  
+        script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js")
+        script(src="../js/method.js")

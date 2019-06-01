@@ -1,0 +1,58 @@
+﻿html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="../css/information.css")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.8.2/css/all.css")
+        title Become A Minimalist-INFORMATION
+    body
+        .header
+            a.title.home(href="../../index.html") HOME
+            a.title.method(href="method.html") METHOD
+            a.title.information.onPage(href="information.html") INFORMATION
+
+        .checkbtn
+            a.book.btn(href="map.html") Minimalists in the world
+            a.map.btn.onOption(href="information.html") Recommended 12 lifestyle books
+
+
+        #bookapp
+            .line.lineOne
+                .title Magical reduction magic
+                .bottom_line
+            .line.lineTwo 
+                .title Minimalist and MUJI
+                .bottom_line
+            .line.lineThree
+                .title Simple life
+                .bottom_line
+            .line.lineFour
+                .title Recommended for daily good things
+                .bottom_line
+            .line.lineFive
+                .title The step of less is more
+                .bottom_line          
+            .bookGroupBg(:id="bookID(index)" v-for='(book, index) in books')
+                img.bookImg(:src="book.img" :class='{ isActive:book.isactive }')
+                .num {{ index+1 }}
+                .bookGroup(:class='{ bookActive:book.isactive }' @mouseover="mouseover(index)" @mouseleave="mouseleave(index)")
+                    .bookTitle
+                        .name(v-bind:href="book.booklink"  target="_blank" v-html="book.name") 
+                        //- .subtitle {{ book.subtitle }}
+                    .info
+                        .author 作者 | {{ book.author }}
+                        //- .introTitle 分享 |
+                        br
+                        .intro(v-html="book.intro") 
+                    .halfCircle  
+        a.js-btn
+            i.fas.fa-chevron-up
+        .footer
+            a.footerObj.about about us
+            a.footerObj.title.method Planning reason
+            .footerObj.copyright &copy; 2019 Become A Minimalist All Rights Reserved NEWSROOM Team     
+
+        script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js")
+        script(src="../js/information.js")

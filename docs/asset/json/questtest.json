@@ -1,0 +1,274 @@
+[{
+        "quest": "對於完成目標前的準備，你會 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;我偏好獲取詳細多元的參考資料&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;b.&emsp;我喜歡依循簡單明瞭的建議&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;c.&emsp;我通常依自己的方式做事，但會有一個核心理念&emsp;",
+                "type": "C"
+            }
+        ],
+        "selected": "C",
+        "id": 1
+    },
+    {
+        "quest": "對於完成目標的進程，你會 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;我喜歡各個擊破，循序漸進完成&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;b.&emsp;我偏好一鼓作氣，徹底解決問題&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;c.&emsp;我通常不特別安排執行步驟，先做再說&emsp;",
+                "type": "C"
+            }
+        ],
+        "selected": "C",
+        "id": 2
+    },
+    {
+        "quest": "我通常選擇的依據是 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;更為注重實際層面，考量效用性&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;b.&emsp;更為注重多數經驗法則，參考他人建議&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;c.&emsp;更為注重直覺，相信自己當下的感覺&emsp;",
+                "type": "B"
+            }
+        ],
+        "selected": "C",
+        "id": 3
+    },
+    {
+        "quest": "以下最能吸引我的資訊內容，是 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;明確的大綱、條例的敘述、對比圖呈現&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;b.&emsp;有清楚的流程圖、因果圖、表格，以及詳盡說明&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;c.&emsp;故事的鋪成、正向的話語、具有共鳴的舉例&emsp;",
+                "type": "B"
+            }
+        ],
+        "selected": "C",
+        "id": 4
+    },
+    {
+        "quest": "以下敘述何者對你來說說服度最高 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;「他們都推薦。」&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;b.&emsp;「我覺得很有用。」&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;「你應該試試看。」&emsp;",
+                "type": "B"
+            }
+        ],
+        "selected": "C",
+        "id": 5
+    },
+    {
+        "quest": "面對他人可能不贊同的情況，你會如何面對 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;希望說服他人並邀請一起參與行動&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;b.&emsp;只要是正確的事，就不會在意&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;會避免和他人起衝突，但仍會獨自完成想完成的事&emsp;",
+                "type": "B"
+            }
+        ],
+        "selected": "C",
+        "id": 6
+    },
+    {
+        "quest": "以下選項中，你認為最能幫助你達到目標的是 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;適切的計畫&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;b.&emsp;共同努力的夥伴&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;c.&emsp;成就感&emsp;",
+                "type": "C"
+            }
+        ],
+        "selected": "C",
+        "id": 7
+    },
+    {
+        "quest": "以下敘述何者對於你理想的居住環境最為貼切 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;我希望被我喜愛的物品圍繞&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;b.&emsp;我希望能使我專注在最重要的事&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;我希望維持一個清爽的空間&emsp;",
+                "type": "A"
+            }
+        ],
+        "selected": "C",
+        "id": 8
+    },
+    {
+        "quest": "只能選擇一種社交平台使用，你會選 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;Facebook&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;b.&emsp;Instergram&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;Youtube&emsp;",
+                "type": "B"
+            }
+        ],
+        "selected": "C",
+        "id": 9
+    },
+    {
+        "quest": "哪個選項包含的自然屬性整體而言最符合你 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;火、雷、光&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;b.&emsp;冰、金、木&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;風、水、土&emsp;",
+                "type": "A"
+            }
+        ],
+        "selected": "C",
+        "id": 10
+    },
+    {
+        "quest": "哪個選項描述的形容詞最符合你的性格 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;直覺、熱情、親切、誠實、坦承、好奇、敏感、溫暖&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;b.&emsp;自律、認真、嚴謹、秩序、專注、完美主義、距離感、實際、精確&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;和諧、平衡、適度、清爽、配合度高、謙虛、知性、耐心、善體人意&emsp;",
+                "type": "A"
+            }
+        ],
+        "selected": "C",
+        "id": 11
+    },
+    {
+        "quest": "你最喜歡以下哪一種礦物 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;純色寶石&emsp;",
+                "type": "A",
+                "img": "../asset/img/gem/one_color.png"
+            },
+            {
+                "q": "&emsp;b.&emsp;彩色鑽石&emsp;",
+                "type": "B",
+                "img": "../asset/img/gem/muticolor.png"
+            },
+            {
+                "q": "&emsp;c.&emsp;透明水晶&emsp;",
+                "type": "C",
+                "img": "../asset/img/gem/transparent.png"
+            }
+        ],
+        "selected": "C",
+        "id": 12
+    },
+    {
+        "quest": "以下哪個畫面讓你感覺是最幸福的 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;一些杯子整齊的展示在櫥櫃&emsp;",
+                "type": "A"
+            },
+            {
+                "q": "&emsp;b.&emsp;一個單獨存在的素面玻璃杯&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;各式各樣漂亮的杯子放在桌上&emsp;",
+                "type": "B"
+            }
+        ],
+        "selected": "C",
+        "id": 13
+    },
+    {
+        "quest": "下述哪段古詞的心境最令你嚮往 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;一簞食，一瓢飲，在陋巷。人不堪其憂，回也不改其樂&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;b.&emsp;飯疏食飲水，曲肱而枕之，樂亦在其中矣&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;c.&emsp;身是菩提樹，心如明鏡臺，時時勤拂拭，勿使惹塵埃&emsp;",
+                "type": "A"
+            }
+        ],
+        "selected": "C",
+        "id": 14
+    },
+    {
+        "quest": "關於未來的模樣，以下選項最符合我的是 :",
+        "options": [{
+                "q": "&emsp;a.&emsp;我有明確對未來的想像，並會規劃得很具體&emsp;",
+                "type": "B"
+            },
+            {
+                "q": "&emsp;b.&emsp;我僅關注在現在&emsp;",
+                "type": "C"
+            },
+            {
+                "q": "&emsp;c.&emsp;我相信只要用心生活，日子就會自然變好&emsp;",
+                "type": "A"
+            }
+        ],
+        "selected": "C",
+        "id": 15
+    }
+]

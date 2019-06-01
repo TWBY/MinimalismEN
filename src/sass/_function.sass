@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css?family=Harmattan|Noto+Sans+TC|Noto+Serif+TC')
+    
+// Language
+//Noto Serif TC
+//Noto Sans TC
+$CH_language: Noto Sans TC
+// $CH_language: 微軟正黑體
+$EN_language: Harmattan
+
+//Color
+$yellow_color: #fefbd2
+$gray_color: #d5d5d5
+$black_color: #231815
+$cccccc: #cccccc
+$Mgray_color: #494949
+
+// mixin
+@mixin size($w,$h)
+    width: $w
+    height: $h
+    
+@mixin flexdisplay($display: flex ,$justify-content: center, $align-items: center)
+    display: $display
+    justify-content: $justify-content
+    align-items: $align-items
+
+@mixin border($border-style: solid , $border-width: 2px , $border-color: #f24)
+    border-style: $border-style
+    border-width: $border-width
+    border-color: $border-color
