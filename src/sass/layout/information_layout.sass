@@ -1,32 +1,35 @@
 
 
 
-.checkbtn
-    position: absolute
-    display: flex
-    flex-direction: column
-    top: 20%
-    left: 15%
-    +size(15%, auto)
-    // +border(dotted, 1px ,black)
-    z-index: 20
-.btn
-    text-align: center
-    font-size: 20px
-    padding: 3px 5px
-    border-radius: 20px
-    letter-spacing: 2px
-    margin-top: 2%
-    color: $Mgray_color
-    text-decoration: none
-    &:hover
-        background-color: #fefbd2
-        color: #231815
-        box-shadow: 1px 2px 0 0 rgba(198, 198, 186, 0.75)
+// .checkbtn
+//     position: absolute
+//     display: flex
+//     flex-direction: column
+//     top: 20%
+//     left: 15%
+//     // top: 0%
+//     // left: 0%
+//     +size(18%, auto)
+//     // +border(dotted, 1px ,black)
+//     z-index: 20
+// .btn
+//     text-align: center
+//     font-size: 20px
+//     padding: 3px 5px
+//     border-radius: 20px
+//     letter-spacing: 2px
+//     margin-top: 2%
+//     // color: $w
+//     // background-color: $lb
+//     text-decoration: none
+//     &:hover
+//         background-color: $ln
+//         color: $lb
+//         box-shadow: 1px 2px 0 0 rgba(198, 198, 186, 0.75)
 
 .onOption
-    background-color: #fefbd2
-    color: #231815
+    background-color: $lb
+    color: $w
     box-shadow: 1px 2px 0 0 rgba(198, 198, 186, 0.75)
 
 
@@ -48,13 +51,12 @@ $book: 17%
 
 //分類標題
 .line
-    color: $Mgray_color
     & .title
         font-size: 20px
         margin-bottom: 0.5%
     & .bottom_line
         +size(100%,1px)
-        +border(solid, 1px ,lighten($Mgray_color,20%))
+        +border(solid, 1px , $lb)
     
 //書籍
 .bookGroupBg
@@ -66,11 +68,10 @@ $book: 17%
 //書籍
 .num
     position: absolute
-    // left: -10%
+    top: 8%
     font-size: 20px
-    color: #595757
 .bookGroup
-    background-color: #f1f2f4
+    background-color: $lg
     +size(50%, 70%)
     z-index: 10
     padding:  5% 0%
@@ -79,11 +80,18 @@ $book: 17%
     opacity: 0
     transition-duration: .5s
     left: 6%
-    
-.info
-    line-height: 200%
-    .intro, .author
-        text-align: center
+    .name
+        background-color: $lg
+    .info
+        line-height: 200%
+        
+        .intro, .author
+            text-align: center
+            background-color: $lg
+        .intro
+            padding-top: 20px
+
+            
 
 .bookActive
     opacity: 1
@@ -98,7 +106,7 @@ $book: 17%
     left: 0%
     top: 100%
     z-index: -1
-    background-color: #f1f2f4
+    background-color: $lg
     border-radius: 0 0 100px 100px 
 
 
@@ -110,6 +118,7 @@ $book: 17%
     //+border()
     opacity: 1
     left: 10%
+    top: 8%
 .isActive
     transform: translateX(120%)
     transition-duration: 1.2s

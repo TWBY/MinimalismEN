@@ -1,6 +1,4 @@
-﻿[
-
-    {
+﻿[{
         "name": "&nbsp; John Pawson",
         "year": "(1949~)",
         "location": "&nbsp;&nbsp; United Kingdom Halifax",
@@ -24,7 +22,7 @@
         "location": "&nbsp;&nbsp;Tokyo, Japan",
         "history": "&nbsp;&nbsp;Japanese Minimalist",
         "isShow": false,
-        "saying": "&nbsp;&nbsp;「I used to compare with others in the past. Since I reduced the items, I feel very happy every day, and I gradually understand what happiness is.」",
+        "saying": "&nbsp;&nbsp;「I used to compare with others in the past. Since I reduced the items, <br>I feel very happy every day, and I gradually understand what happiness is.」",
         "img": "../asset/img/mapPeople/Sasaki.png"
     },
     {
@@ -33,8 +31,8 @@
         "location": "&nbsp;&nbsp;Copenhagen, Denmark",
         "history": "&nbsp;&nbsp;The Architect of Postmodernism",
         "isShow": false,
-        "saying": "&nbsp;&nbsp;「Only a person with rich hearts can draw simple lines and design a clean product appearance.」",
-        "img": "../asset/img/mapPeople/Jacob.jpg"
+        "saying": "&nbsp;&nbsp;「Only a person with rich hearts can draw simple lines <br>and design a clean product appearance.」",
+        "img": "../asset/img/mapPeople/Jacob.png"
     },
     {
         "name": " &nbsp; Mark Zuckerberg",
@@ -42,7 +40,7 @@
         "location": "&nbsp;&nbsp;United States New York",
         "history": "&nbsp;&nbsp;Facebook Founder",
         "isShow": false,
-        "saying": "&nbsp;&nbsp;「I feel that I have no energy on work, if I spend my energy on stupid or meaningless things.」",
+        "saying": "&nbsp;&nbsp;「I feel that I have no energy on work, if I spend my energy on stupid <br>or meaningless things.」",
         "img": "../asset/img/mapPeople/Mark.png"
     },
     {
@@ -70,7 +68,7 @@
         "history": "&nbsp;&nbsp;minimalist designer",
         "isShow": false,
         "saying": "&nbsp;&nbsp;「Your home is living space, not storage space.」",
-        "img": "../asset/img/mapPeople/Francine.jpg"
+        "img": "../asset/img/mapPeople/Francine.png"
     },
     {
         "name": " &nbsp; Naoki Numahata",
@@ -78,7 +76,7 @@
         "location": "&nbsp;&nbsp;Japan Tokyo",
         "history": "&nbsp;&nbsp;Japanese Minimalist",
         "isShow": false,
-        "saying": "&nbsp;&nbsp;「Simple minimal life is a way of life that embraces the modern future of material civilization.」",
+        "saying": "&nbsp;&nbsp;「Simple minimal life is a way of life that embraces <br>the modern future of material civilization.」",
         "img": "../asset/img/mapPeople/Numahata.png"
     },
     {
@@ -96,8 +94,8 @@
         "location": "&nbsp;&nbsp;United States Tennessee Memphis",
         "history": "&nbsp;&nbsp;TED Speaker, Famous Speaker",
         "isShow": false,
-        "saying": "&nbsp;&nbsp;「Most of us spend so much time on the former, that we can neglect the latter in the trade-off」",
-        "img": "../asset/img/mapPeople/Colin.jpg"
+        "saying": "&nbsp;&nbsp;「Most of us spend so much time on the former, <br>that we can neglect the latter in the trade-off」",
+        "img": "../asset/img/mapPeople/Colin.png"
     },
     {
         "name": " &nbsp; Joshua Becker",
@@ -107,7 +105,6 @@
         "isShow": false,
         "saying": "&nbsp;&nbsp;「Under everything you have, discover the life you want.」",
         "img": "../asset/img/mapPeople/Joshua_b.png"
-
     },
     {
         "name": " &nbsp; Yongzheng",
@@ -115,7 +112,7 @@
         "location": "&nbsp;&nbsp;China Beijing",
         "history": "&nbsp;&nbsp;Emperor of the Qing Dynasty",
         "isShow": false,
-        "saying": "&nbsp;&nbsp;「After inspecting folk, don’t host the luxury feast,to show the virtue of uncorrupted and frugal.」",
+        "saying": "&nbsp;&nbsp;「After inspecting folk, don’t host the luxury feast,<br>to show the virtue of uncorrupted and frugal.」",
         "img": "../asset/img/mapPeople/Yongzheng.png"
     },
     {
@@ -124,7 +121,7 @@
         "location": "&nbsp;&nbsp;Dayton, Ohio, USA",
         "history": "&nbsp;&nbsp;Film Producer, Writer",
         "isShow": false,
-        "saying": "&nbsp;&nbsp;「Minimalism does not mean that you have nothing, but that you want to cross the ocean of matter and find something truly important.」",
+        "saying": "&nbsp;&nbsp;「Minimalism does not mean that you have nothing, but that you want to <br>cross the ocean of matter and find something truly important.」",
         "img": "../asset/img/mapPeople/Joshua_f.png"
     }
 ]

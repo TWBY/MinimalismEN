@@ -10,13 +10,13 @@
 
     & .symbol
         font-size: 230px
-        -webkit-text-stroke: 1.1px #333
-        color: #fefbd2
+        // -webkit-text-stroke: 1.1px #333
+        color: $b
         letter-spacing: 12px
     & .unit
         font-size: 25px
         border-radius: 100px
-        color: #231815
+        // color: #231815
 
     & .depiction
         letter-spacing: 1.4px
@@ -24,16 +24,16 @@
         font-size: 28px
     & .button
         border-radius: 100px
-        background-color: $yellow_color
-        color: $black_color
+        background-color: $lb
+        color: $w
         cursor: pointer
         font-size: 20px
         box-shadow: 0px 5px 2px $cccccc
         // transition-duration: .8s
         &:hover
             // transition-duration: .8s
-            background-color: $gray_color
-            color: $black_color
+            background-color: $ln
+            color: $lb
 .logo
     max-width: 70px
 
@@ -42,13 +42,13 @@
 
 //進度條    
 .bar
-    border: solid 1px #ccc
+    border: solid 1px #c4c4c2
     background: #f2f2f2
     border-radius: 30px
     box-shadow: 1px 2px 0 0 rgba(198, 198, 186, 0.75)
 .inner
-    background: #faf8d7
-    color: #808080
+    background: #c4c4c2
+    color: $b
     border: solid 1px #b3b3b3
     border-radius: 30px
 
@@ -56,16 +56,17 @@
 //題目
 .title
     font-size: 24px
-.option
-    color: #505256
+
+.logo
+    background-color: transparent
 
 input[type=radio]
     display: none
     &:checked + .labelOuter
         & label
-            background-color: #fefbd2
+            background-color: $lg
             border-radius: 50px
-            color: #505256
+            // color: #505256
 .labelOuter
     +size(auto, 35px)
     margin-top: 5px
@@ -84,6 +85,8 @@ label
     #ques#{$i} 
         .gem
             visibility: hidden
+            // background-color: transparent
+            background-color: #f24
 
 #ques11
     .labelOuter
@@ -105,13 +108,17 @@ label
 //結果頁面
 #results
     +border(solid,2px,$cccccc)
-    border-top-left-radius: 20px
-    border-top-right-radius: 20px
+    // border-top-left-radius: 20px
+    // border-top-right-radius: 20px
+    border-radius: 20px
 .resultContainer
     border-radius: 30px
     // +border(solid, 3.5px ,#ccc)
     & .title
-        color: #000000
-        background-color: #efefef //正版
+        background-color: $lg //正版
         border-radius: 20px
         text-align: center
+#result1
+    border-left: solid 2px $cccccc
+    border-right: solid 2px $cccccc
+    border-radius: 0px

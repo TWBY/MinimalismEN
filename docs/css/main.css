@@ -5,12 +5,14 @@
   box-sizing: border-box;
   position: relative;
   font-weight: 500;
-  font-family: Noto Sans TC; }
+  font-family: Noto Sans TC;
+  color: #3f3f38; }
 
 body, html {
   margin: 0;
   width: 1920px;
-  height: 1009px; }
+  height: 1009px;
+  background-color: #f8f8f8; }
 
 .header {
   display: -webkit-box;
@@ -19,8 +21,8 @@ body, html {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  position: relative;
-  height: 13%; }
+  height: 13%;
+  z-index: 100; }
   .header .title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -31,28 +33,40 @@ body, html {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: black;
     width: 12%;
     height: 100%;
-    margin-right: 3.5%;
+    margin-right: 3.0%;
     font-size: 32px;
     letter-spacing: 2.6px;
     text-decoration: none;
     font-family: Harmattan;
     padding: 0 20px; }
-    .header .title .home {
-      margin-right: 4%; }
+
+.changeLanguage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 20px; }
+
+.LanguageBtn {
+  width: 40px;
+  height: 40px; }
 
 .onPage {
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   -webkit-box-shadow: 0px 5px 5px #cccccc;
   box-shadow: 0px 5px 5px #cccccc;
-  background-color: #fff; }
+  background-color: #e3e4e7; }
 
 .footer {
-  background-color: #f2f2f2;
-  color: #736357;
+  background-color: #d1cec6;
   width: 100%;
   height: 5.5%;
   display: -webkit-box;
@@ -69,12 +83,13 @@ body, html {
   justify-content: flex-start; }
   .footer .footerObj {
     font-size: 18px;
-    margin-left: 2%; }
+    margin-left: 2%;
+    background-color: transparent; }
 
 .js-btn {
   width: 50px;
   height: 50px;
-  background: #636363;
+  background: #494c49;
   position: fixed;
   bottom: 10%;
   left: 4%;
@@ -100,7 +115,8 @@ body, html {
     font-size: 19px;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    background-color: transparent; }
   .js-btn:hover {
     background: rgba(0, 0, 0, 0.9); }
     .js-btn:hover i {
@@ -113,10 +129,33 @@ body, html {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
-@media screen and (max-width: 1366px) {
-  .header .title {
-    margin-right: 4%;
-    font-size: 28px; } }
+.checkbtn {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  top: 200px;
+  left: 200px;
+  width: 300px;
+  height: 5%;
+  z-index: 100; }
+  .checkbtn .btn {
+    text-align: center;
+    font-size: 20px;
+    padding: 3px 5px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    margin-top: 2%;
+    text-decoration: none; }
+    .checkbtn .btn:hover {
+      background-color: #dddbd1;
+      color: #494c49;
+      -webkit-box-shadow: 1px 2px 0 0 rgba(198, 198, 186, 0.75);
+      box-shadow: 1px 2px 0 0 rgba(198, 198, 186, 0.75); }
 
 .Content {
   width: 100%;
@@ -146,7 +185,7 @@ body, html {
   -ms-grid-rows: 60% 40%;
   grid-template-rows: 60% 40%; }
   .line .logo {
-    width: 60%;
+    width: 65%;
     height: auto;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -154,10 +193,11 @@ body, html {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
-    -ms-grid-column-align: center;
-    justify-self: center;
-    -ms-grid-row-align: start;
-    align-self: start; }
+    -ms-grid-column-align: start;
+    justify-self: start;
+    -ms-grid-row-align: center;
+    align-self: center;
+    left: 5px; }
   .line .videoTitle {
     font-size: 28px;
     letter-spacing: 5px;
@@ -186,8 +226,8 @@ body, html {
   display: inline;
   padding: 5px 20px;
   border-radius: 20px;
-  background-color: #fefbd2;
-  color: #231815;
+  background-color: #494c49;
+  color: #ffffff;
   -webkit-box-shadow: 0.8px 1.5px 0 0 rgba(198, 198, 186, 0.75);
   box-shadow: 0.8px 1.5px 0 0 rgba(198, 198, 186, 0.75);
   font-size: 18px;
@@ -202,11 +242,11 @@ body, html {
     -webkit-transition-duration: .8s;
     -o-transition-duration: .8s;
     transition-duration: .8s;
-    background-color: #d5d5d5;
-    color: #231815; }
+    background-color: #dddbd1;
+    color: #494c49; }
 
 .LandingPages {
-  z-index: -1; }
+  z-index: 10; }
 
 .Texts {
   width: 18%;
@@ -316,14 +356,16 @@ body, html {
   justify-self: start; }
 
 .StreetButton {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
   -ms-grid-row-align: center;
-  align-self: center; }
+  align-self: center;
+  -ms-grid-column-align: end;
+  justify-self: end; }
 
 .PeopleInterview {
   display: -webkit-box;
@@ -562,3 +604,19 @@ input[type=range] {
     input[type=range]::-webkit-slider-thumb:active {
       -webkit-transform: scale(1.2);
       transform: scale(1.2); }
+
+.line .videoTitle {
+  letter-spacing: 1px; }
+
+.intro {
+  letter-spacing: 1px;
+  font-size: 16 px; }
+
+.changePage {
+  letter-spacing: 1px; }
+
+.introPeople {
+  left: 50px; }
+
+html, body {
+  overflow-x: hidden; }

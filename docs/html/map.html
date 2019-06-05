@@ -8,8 +8,10 @@
     <title>Become A Minimalist- MAP</title>
   </head>
   <body>
-    <div class="header"><a class="title home" href="../../index.html">HOME</a><a class="title method" href="method.html">METHOD</a><a class="title information onPage" href="information.html">INFORMATION</a></div>
-    <div class="checkbtn"><a class="book btn onOption" href="map.html">Minimalists in the world</a><a class="map btn" href="information.html">Recommended 12 lifestyle books</a></div>
+    <div class="header"><a class="title home" href="../../index.html">HOME</a><a class="title method" href="method.html">METHOD</a><a class="title information onPage" href="information.html">INFORMATION</a>
+      <div class="changeLanguage"><a href="http://"><img class="LanguageBtn chBtn" src="../asset/img/Language/中按鈕.png" alt="" srcset=""/></a></div>
+    </div>
+    <div class="checkbtn"><a class="book btn onOption" href="map.html">Minimalists in the world</a><a class="map btn" href="information.html">Sincerely recommend</a></div>
     <div id="map">
       <div class="mapInfo"><img id="map_img" src="../asset/img/地圖底圖.png"/>
         <div id="point_img"><img class="point_img" v-for="(people, index) in peoples" @click="showPic(index)" :id="picID(index)" src="../asset/img/mapPoint/unClick_point.png"/></div>
@@ -18,9 +20,9 @@
         <div class="infoText" v-if="people.isShow"><img id="card_img" :src="people.img"/>
           <div id="card_text">
             <div class="topText detail"><img id="logo_img" src="../asset/img/logo.png"/><span class="name" v-html="people.name"> </span><span class="year" v-html="people.year"> </span></div>
-            <p class="detail">Location&nbsp; :<span v-html="people.location"> </span></p>
-            <p class="detail">Historical Positioning&nbsp; :<span v-html="people.history"> </span></p>
-            <p class="detail">Minimalist saying&nbsp; :<span v-html="people.saying"> </span></p>
+            <p class="detail">Location  &nbsp;&nbsp;&nbsp;&nbsp; |<span v-html="people.location"> </span></p>
+            <p class="detail">Position  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<span v-html="people.history"> </span></p>
+            <p class="detail">Reference &nbsp;&nbsp; |<span v-html="people.saying"> </span></p>
           </div>
         </div>
       </div>

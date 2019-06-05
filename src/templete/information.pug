@@ -11,15 +11,18 @@
             a.title.home(href="../../index.html") HOME
             a.title.method(href="method.html") METHOD
             a.title.information.onPage(href="information.html") INFORMATION
+            .changeLanguage
+                a(href="http://")
+                    img.LanguageBtn.chBtn(src="../asset/img/Language/中按鈕.png", alt="", srcset="")
 
         .checkbtn
             a.book.btn(href="map.html") Minimalists in the world
-            a.map.btn.onOption(href="information.html") Recommended 12 lifestyle books
+            a.map.btn.onOption(href="information.html") Sincerely recommend
 
 
         #bookapp
             .line.lineOne
-                .title Magical reduction magic
+                .title Reduction magic
                 .bottom_line
             .line.lineTwo 
                 .title Minimalist and MUJI
@@ -28,10 +31,10 @@
                 .title Simple life
                 .bottom_line
             .line.lineFour
-                .title Recommended for daily good things
+                .title Little fortunate
                 .bottom_line
             .line.lineFive
-                .title The step of less is more
+                .title To cut, to abandon, to leave
                 .bottom_line          
             .bookGroupBg(:id="bookID(index)" v-for='(book, index) in books')
                 img.bookImg(:src="book.img" :class='{ isActive:book.isactive }')
@@ -41,7 +44,7 @@
                         .name(v-bind:href="book.booklink"  target="_blank" v-html="book.name") 
                         //- .subtitle {{ book.subtitle }}
                     .info
-                        .author 作者 | {{ book.author }}
+                        .author {{ book.author }}
                         //- .introTitle 分享 |
                         br
                         .intro(v-html="book.intro") 

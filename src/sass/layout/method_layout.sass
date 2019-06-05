@@ -127,8 +127,8 @@ $inner_height: $bar_height / 16 //20px
 .resultBtn
     position: absolute
     font-size: 20px
-    background-color: $yellow_color
-    color: $black_color
+    background-color: $lb
+    color: $w
     left: 39%
     top: 105%
     padding: 0.3% 4%
@@ -136,8 +136,8 @@ $inner_height: $bar_height / 16 //20px
     box-shadow: 0px 5px 2px $cccccc
     letter-spacing: 2px
     &:hover
-        background-color: $gray_color
-        color: $black_color
+        background-color: $ln
+        color: $lb
 
 
 
@@ -164,6 +164,7 @@ $inner_height: $bar_height / 16 //20px
         position: absolute
         +size(40px, 100% - 5%)
         padding-top: 20px
+        transition-delay: .8s
 
     //人物
     & .People
@@ -172,8 +173,7 @@ $inner_height: $bar_height / 16 //20px
         bottom: 0px
         +size(400px, auto)
         transition-delay: .8s
-
-
+        background-color: transparent
 
     //簡介
     & .depiction
@@ -197,7 +197,7 @@ $inner_height: $bar_height / 16 //20px
     //星星
     & .stars
         position: absolute
-        left: 50px
+        left: 70px
         display: flex
         flex-wrap: wrap
         +size(230px, auto)
@@ -206,7 +206,7 @@ $inner_height: $bar_height / 16 //20px
         & .star
             +size(15%, auto)
             margin-left: 5%
-            margin-top: 5%
+            margin-top: 8%
             & img
                 +size(100%, auto)
                 transition-delay: 0.8s
@@ -214,6 +214,7 @@ $inner_height: $bar_height / 16 //20px
         opacity: 0
         // transition-delay: 1.8s
         transition-delay: -0.3s
+
 
 
 //header

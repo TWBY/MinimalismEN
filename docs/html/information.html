@@ -9,11 +9,13 @@
     <title>Become A Minimalist-INFORMATION</title>
   </head>
   <body>
-    <div class="header"><a class="title home" href="../../index.html">HOME</a><a class="title method" href="method.html">METHOD</a><a class="title information onPage" href="information.html">INFORMATION</a></div>
-    <div class="checkbtn"><a class="book btn" href="map.html">Minimalists in the world</a><a class="map btn onOption" href="information.html">Recommended 12 lifestyle books</a></div>
+    <div class="header"><a class="title home" href="../../index.html">HOME</a><a class="title method" href="method.html">METHOD</a><a class="title information onPage" href="information.html">INFORMATION</a>
+      <div class="changeLanguage"><a href="http://"><img class="LanguageBtn chBtn" src="../asset/img/Language/中按鈕.png" alt="" srcset=""/></a></div>
+    </div>
+    <div class="checkbtn"><a class="book btn" href="map.html">Minimalists in the world</a><a class="map btn onOption" href="information.html">Sincerely recommend</a></div>
     <div id="bookapp">
       <div class="line lineOne">
-        <div class="title">Magical reduction magic</div>
+        <div class="title">Reduction magic</div>
         <div class="bottom_line"></div>
       </div>
       <div class="line lineTwo"> 
@@ -25,11 +27,11 @@
         <div class="bottom_line"></div>
       </div>
       <div class="line lineFour">
-        <div class="title">Recommended for daily good things</div>
+        <div class="title">Little fortunate</div>
         <div class="bottom_line"></div>
       </div>
       <div class="line lineFive">
-        <div class="title">The step of less is more</div>
+        <div class="title">To cut, to abandon, to leave</div>
         <div class="bottom_line">         </div>
       </div>
       <div class="bookGroupBg" :id="bookID(index)" v-for="(book, index) in books"><img class="bookImg" :src="book.img" :class="{ isActive:book.isactive }"/>
@@ -39,7 +41,7 @@
             <div class="name" v-bind:href="book.booklink" target="_blank" v-html="book.name"> </div>
           </div>
           <div class="info">
-            <div class="author">作者 | {{ book.author }}</div><br/>
+            <div class="author">{{ book.author }}</div><br/>
             <div class="intro" v-html="book.intro"> </div>
           </div>
           <div class="halfCircle"> </div>

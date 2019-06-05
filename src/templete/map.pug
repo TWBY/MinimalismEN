@@ -10,9 +10,12 @@
             a.title.home(href="../../index.html") HOME
             a.title.method(href="method.html") METHOD
             a.title.information.onPage(href="information.html") INFORMATION
+            .changeLanguage
+                a(href="http://")
+                    img.LanguageBtn.chBtn(src="../asset/img/Language/中按鈕.png", alt="", srcset="")
         .checkbtn
             a.book.btn.onOption(href="map.html") Minimalists in the world
-            a.map.btn(href="information.html") Recommended 12 lifestyle books
+            a.map.btn(href="information.html") Sincerely recommend
         #map
             .mapInfo
                 img#map_img(src='../asset/img/地圖底圖.png')
@@ -26,11 +29,11 @@
                             img#logo_img(src='../asset/img/logo.png')
                             span.name(v-html="people.name") 
                             span.year(v-html="people.year") 
-                        p.detail Location&nbsp; :
+                        p.detail Location  &nbsp;&nbsp;&nbsp;&nbsp; |
                             span(v-html="people.location") 
-                        p.detail Historical Positioning&nbsp; :
+                        p.detail Position  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
                             span(v-html="people.history") 
-                        p.detail Minimalist saying&nbsp; :
+                        p.detail Reference &nbsp;&nbsp; |
                             span(v-html="people.saying") 
 
         .footer

@@ -1,25 +1,25 @@
 ﻿[{
-        "name": "Tidying Up with Marie Kondo",
+        "name": "The Life-Changing Magic of Tidying Up",
         "subtitle": "這是副標這是",
         "author": "Kondo Ma Lihui",
         "img": "../asset/img/books/怦1.png",
         "booklink": "https://www.books.com.tw/products/0010521950",
-        "intro": "Professional organizing consultant -- Kondo Ma Lihui<br>Deliver an effective organizing method with passion and experience.",
+        "intro": "Deliver an effective organizing method with passion and experience.",
         "isactive": false,
         "index": 1
     },
     {
-        "name": "Tidying Up with Marie Kondo 2",
+        "name": "The Life-Changing Magic of Tidying Up 2",
         "subtitle": "這是副標這是",
         "author": "Kondo Ma Lihui",
         "img": "../asset/img/books/怦2.png",
         "booklink": "https://www.books.com.tw/products/0010582986?loc=P_asb_001",
-        "intro": "To the person who harvesting the discard trick,<br>Discover the magic of the ideal space.",
+        "intro": "To the person <br>who harvesting<br> the discard trick,<br>Discover the magic of the ideal space.",
         "isactive": false,
         "index": 2
     },
     {
-        "name": "I decided simple life",
+        "name": "MUJI & Minimalism",
         "subtitle": "這是副標這是",
         "author": "Sasaki",
         "img": "../asset/img/books/無印極簡.png",
@@ -34,12 +34,12 @@
         "author": "Yamaguchi",
         "img": "../asset/img/books/無印生活.png",
         "booklink": "https://www.books.com.tw/products/0010741070",
-        "intro": "Few items to live a simple life!<br>Muji makes simple and beautiful,<br>Practice your imagination in the texture space.",
+        "intro": "Few items to live a simple life!<br>MUJI makes simple.<br>Practice your imagination in the texture space.",
         "isactive": false,
         "index": 4
     },
     {
-        "name": "Minimalist proposal of MUJI",
+        "name": "Goodbye, Things",
         "subtitle": "這是副標這是",
         "author": "Michelle",
         "img": "../asset/img/books/決定.png",
@@ -74,7 +74,7 @@
         "author": "Ben Duo Sha Zhi",
         "img": "../asset/img/books/戀物.png",
         "booklink": "https://www.books.com.tw/products/0010729204?loc=P_003_007",
-        "intro": "Not to discard but to save the thing you really love.<br>You can feel minimal happiness when everything is your favorite.",
+        "intro": "Not to discard but to save the thing you really love.",
         "isactive": false,
         "index": 8
     },
@@ -84,22 +84,22 @@
         "author": "X-knowledge",
         "img": "../asset/img/books/美好生活.png",
         "booklink": "https://www.books.com.tw/products/0010729204?loc=P_003_007",
-        "intro": "Five different mature women share the ingenuity details of life.<br>Including diet, apparel, decorate, vegetation and cosmetology.",
+        "intro": "Five different mature women share the ingenuity details of life.",
         "isactive": false,
         "index": 9
     },
     {
-        "name": "Less is more",
+        "name": "To cut, to abandon, <br>to leave",
         "subtitle": "這是副標這是",
         "author": "Yamashita Hideko",
         "img": "../asset/img/books/斷捨.png",
         "booklink": "https://www.books.com.tw/products/0010516523",
-        "intro": "New life stress is living a new life still.<br>Author propose three step to change the life.<br>That influence millions of people.",
+        "intro": "Author propose three step to improve.<br>That influence millions of people.",
         "isactive": false,
         "index": 10
     },
     {
-        "name": "Less is more trend",
+        "name": "The trend of <br>Less is more",
         "subtitle": "山下英子",
         "author": "Yamashita Hideko",
         "img": "../asset/img/books/斷流.png",
@@ -109,7 +109,7 @@
         "index": 11
     },
     {
-        "name": "Simple life of Less is more",
+        "name": "Simple life of <br>Less is more",
         "subtitle": "這是副標這是",
         "author": "Yamashita Hideko",
         "img": "../asset/img/books/斷簡.png",

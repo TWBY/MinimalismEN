@@ -10,6 +10,9 @@
             a.title.home(href="../../index.html") HOME
             a.title.method.onPage(href="method.html") METHOD
             a.title.information(href="information.html") INFORMATION
+            .changeLanguage
+                a(href="http://")
+                    img.LanguageBtn.chBtn(src="../asset/img/Language/中按鈕.png", alt="", srcset="")
         #app
             template#intro(v-if='pageNow == 0')
                 .intro
@@ -17,8 +20,8 @@
                         .top
                             .logoContain
                                 img.logo(src="../asset/img/logo.png", alt="aaa")
-                            .title 「Which reduction method is asuitable for you?」
-                            .subtitle Let the test tells you.Which one are you suitable for the three laws?
+                            .title 「Which reduction method is suitable for you?」
+                            .subtitle  Which one are you suitable for the three laws?
 
                         .bottom
                             .operation
@@ -33,7 +36,9 @@
                                 .depiction 
                                     | The result of psychological test .
                                     br 
-                                    | Just for amusement only, not Academic quantitative report.
+                                    | Just for amusement only,
+                                    br 
+                                    | not academic quantitative report.
                                     br
                                     
                                 .button.start(@click='start') START
@@ -62,13 +67,13 @@
                 //- .Btn.nextBtn(@click='next', v-if='this.now < this.questions.length - 3') 下一頁
                 //- .Btn.nextBtn(@click='next' src="../asset/img/button/白按鈕.png", v-if='this.now < this.questions.length - 3')
                 .Btn.nextBtn(@click='next' , v-if='this.now < this.questions.length - 3')
-                .Btn.resultBtn(@click='settlement', v-if='this.now == this.questions.length - 3') 看結果
+                .Btn.resultBtn(@click='settlement', v-if='this.now == this.questions.length - 3') Result
                 //- .Btn.resultBtn(@click='settlement', v-if='true') 看結果
 
             template#result(v-if='pageNow == 2')
                 #results
                     .resultContainer(:id="resultId(index)" v-for='(result, index) in resultInfos' @mouseover="mouseover(index)" @mouseleave="mouseleave(index)")
-                        .title {{ result.title }} 
+                        .title.resultTitle {{ result.title }} 
                         img.People(v-bind:src="result.img", alt="")
                         .stars
                             .star(v-for='item in showStar(index)') 
@@ -76,8 +81,8 @@
                         .depiction
                             .state(v-html='result.state')
         .footer
-            a.footerObj.about About us
-            a.footerObj.title.method 企劃來由
+            a.footerObj.about about us
+            a.footerObj.title.method Planning reason
             .footerObj.copyright &copy; 2019 Become A Minimalist All Rights Reserved NEWSROOM Team  
         script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js")

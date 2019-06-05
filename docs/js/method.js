@@ -7,17 +7,17 @@ let everytype = {
 
 //everystep =  [{},{},{}]
 let everytypes = [{
-        type: "A",
-        value: ''
-    },
-    {
-        type: "B",
-        value: ''
-    },
-    {
-        type: "C",
-        value: ''
-    },
+    type: "A",
+    value: ''
+},
+{
+    type: "B",
+    value: ''
+},
+{
+    type: "C",
+    value: ''
+},
 ]
 
 
@@ -41,16 +41,16 @@ var vm = new Vue({
             var vm = this;
             vm.questions = val.data;
         }).
-        catch(function (error) {
-            console.log("error=" + error);
-        });
+            catch(function (error) {
+                console.log("error=" + error);
+            });
         axios.get('../asset/json/resultInfo.json').then(val => {
             var vm = this;
             vm.resultInfos = val.data;
         }).
-        catch(function (error) {
-            console.log("error=" + error);
-        });
+            catch(function (error) {
+                console.log("error=" + error);
+            });
 
     },
     computed: {
@@ -204,20 +204,25 @@ var vm = new Vue({
         mouseover: function (index) {
             const people = document.querySelectorAll('.People');
             const stars = document.querySelectorAll('.stars');
+            const title = document.querySelectorAll('.resultTitle');
+            console.log(title);
             for (let i = 0; i < people.length; i++) {
                 if (i != index) {
                     people[i].classList.add('open');
-                    stars[i].classList.add('open')
+                    stars[i].classList.add('open');
+                    title[i].classList.add('open');
                 }
             }
         },
         mouseleave: function (index) {
             const people = document.querySelectorAll('.People');
             const stars = document.querySelectorAll('.stars');
+            const title = document.querySelectorAll('.resultTitle');
             for (let i = 0; i < people.length; i++) {
                 if (i != index) {
                     people[i].classList.remove('open');
-                    stars[i].classList.remove('open')
+                    stars[i].classList.remove('open');
+                    title[i].classList.remove('open');
                 }
             }
         }
