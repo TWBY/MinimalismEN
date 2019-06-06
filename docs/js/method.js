@@ -7,17 +7,17 @@ let everytype = {
 
 //everystep =  [{},{},{}]
 let everytypes = [{
-    type: "A",
-    value: ''
-},
-{
-    type: "B",
-    value: ''
-},
-{
-    type: "C",
-    value: ''
-},
+        type: "A",
+        value: ''
+    },
+    {
+        type: "B",
+        value: ''
+    },
+    {
+        type: "C",
+        value: ''
+    },
 ]
 
 
@@ -41,16 +41,16 @@ var vm = new Vue({
             var vm = this;
             vm.questions = val.data;
         }).
-            catch(function (error) {
-                console.log("error=" + error);
-            });
+        catch(function (error) {
+            console.log("error=" + error);
+        });
         axios.get('../asset/json/resultInfo.json').then(val => {
             var vm = this;
             vm.resultInfos = val.data;
         }).
-            catch(function (error) {
-                console.log("error=" + error);
-            });
+        catch(function (error) {
+            console.log("error=" + error);
+        });
 
     },
     computed: {
@@ -198,6 +198,7 @@ var vm = new Vue({
             // let transRange = (BarHeight - (this.number + 1) * innerHeight) + 'px';
             let transRange = BarHeight - (BarHeight / this.questions.length) * this.number + 'px';
             let transHeight = (BarHeight / this.questions.length) * this.number + 'px';
+            inner.style.opacity = "1";
             inner.style.transform = 'translateY(' + transRange + ')';
             inner.style.height = transHeight;
         },

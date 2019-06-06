@@ -69,14 +69,14 @@ btn.addEventListener('click', function () {
 
 
 window.onscroll = function () {
-    const top = document.body.scrollTop;
+    const top = window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop;
     if (top >= 500) {
-        console.log("top>100");
+        // console.log("top>100");
         btn.classList.add('fade')
     }
     if (top < 500) {
-        console.log("top<500");
+        // console.log("top<500");
         btn.classList.remove('fade')
     }
-    console.log(document.body.scrollTop);
+    console.log("window.pageYOffset= " + window.pageYOffset);
 };
